@@ -1,0 +1,236 @@
+.insights{
+    display: flex;
+    flex-direction: column;    
+    gap: 32px;
+    width: 100%;
+    padding: 20px;
+    .title{
+        box-shadow: 0px 12px 34px rgba(0,0,0,0.1);
+        display: flex;                
+        align-items: center;
+        padding: 10px;
+        justify-content: space-between;
+        border-radius: 10px;
+        background-color: white;
+        h1{
+            font-style: normal;
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 24px;
+            align-items: center;
+            letter-spacing: 0.3px;
+            color: #1E1E1E;
+        }
+        .newIntern{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            
+            padding: 12px 16px;
+            /* Purple */
+            background: #793EF5;
+            border-radius: 12px;
+            color: #FFFFFF;
+            gap: 10px;
+            span{
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+                /* identical to box height, or 143% */
+                text-align: center;
+                letter-spacing: 0.4px;
+                
+                
+            }
+        }
+    }
+    .container{
+        box-shadow: 0px 12px 34px rgba(0,0,0,0.1);
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+        .chartText{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 16px;
+            gap: 20px;
+            /* Snow */
+            background: #FFFFFF;
+            border-radius: 16px;
+            .text{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 16px;
+                gap: 10px;
+                width: 200px;
+                /* Grey Light */
+                background: #F6F5F9;
+                border-radius: 16px;
+                h3{                                             
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 24px;
+                    font-feature-settings: 'liga' off;
+                    color: #333333;
+                }
+                p{                    
+                    font-family: 'Space Grotesk';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 20px;
+                    /* or 143% */
+                    letter-spacing: 0.3px;
+                    /* Dark */
+                    color: #1E1E1E;
+                }
+            }
+            .chart{
+                display: flex;
+                flex-direction: column;
+                align-items: center;                
+                padding: 0px;
+                gap: 50px;    
+                width: 100%;            
+                .filterBar{
+                    display: flex;
+                    flex-direction: column;
+                    padding: 8px;
+                    width: 100%;
+                    /* Gray 6 */
+                    background: #F2F2F2;
+                    border-radius: 12px;
+                    .wrapper{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        padding: 0px;                
+                        .weekMonth{
+                            display: flex;
+                            flex-direction: row;
+                            gap: 10px;                           
+                            .week{
+                                display: flex;
+                                flex-direction: row;
+                                align-items: center;
+                                padding: 6px 12px;                               
+                                /* Purple */
+                                background: #793EF5;
+                                border-radius: 8px;
+                                span{                                   
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                    /* identical to box height, or 143% */
+                                    text-align: center;
+                                    /* Snow */
+                                    color: #FFFFFF;
+                                }
+                            }
+                            .month{
+                                display: flex;
+                                flex-direction: row;
+                                align-items: center;
+                                padding: 6px 12px;
+                                gap: 8px;                               
+                                /* Snow */
+                                background: #FFFFFF;
+                                border-radius: 8px;
+                                span{                                    
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                    /* identical to box height, or 143% */
+                                    text-align: center;                                    font-feature-settings: 'liga' off;
+                                    /* Dark */
+                                    color: #1E1E1E;
+                                }
+                            }
+                        }
+                        .calender{
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            padding: 6px 12px;
+                            gap: 8px;                        
+                            /* Snow */
+                            background: #FFFFFF;
+                            border-radius: 8px;
+                            span{                                
+                                font-style: normal;
+                                font-weight: 500;
+                                font-size: 14px;
+                                line-height: 20px;
+                                /* identical to box height, or 143% */
+                                text-align: center;
+
+                                /* Dark */
+                                color: #1E1E1E;
+                            }
+                        }
+                    }
+                }
+            
+            .funnel{
+                display: flex;
+                flex-direction: row;                     
+                width: 100%;       
+                height: 100%;
+                position: relative;  
+                  
+                    img{                        
+                        width: 100%;
+                        height: 70%;                    
+                        position: absolute;
+                        z-index: 10;
+                        
+                    }
+                
+                .box{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    text-align: center;
+                    align-items: center;                                        
+                    border-radius: 10px;
+                    position: relative;
+                    width: 16.66%;       
+                    
+                    &:not(:first-child):before{
+                        position: absolute;
+                        content: "";
+                        top: 0;
+                        left: 0;
+                        border: 1px solid #EFEFEF;
+                        height: 80%;
+                        z-index: 2;                        
+                    }
+                  
+                  
+                    .futter{
+                        bottom: 0;
+                        position: absolute;
+                        
+                        p{
+                            font-style: normal;
+                            font-size: small;
+                        }
+                    }
+                }
+                .active{
+                    background: #F2F2F2;  
+                    
+                   
+                }
+            }
+        }
+    }
+        
+    }
+}
