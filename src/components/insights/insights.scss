@@ -22,12 +22,11 @@
             color: #1E1E1E;
         }
         .newIntern{
+            cursor: pointer;
             display: flex;
             flex-direction: row;
-            align-items: center;
-            
+            align-items: center;            
             padding: 12px 16px;
-            /* Purple */
             background: #793EF5;
             border-radius: 12px;
             color: #FFFFFF;
@@ -37,7 +36,6 @@
                 font-weight: 400;
                 font-size: 14px;
                 line-height: 20px;
-                /* identical to box height, or 143% */
                 text-align: center;
                 letter-spacing: 0.4px;
                 
@@ -56,7 +54,6 @@
             justify-content: space-between;
             padding: 16px;
             gap: 20px;
-            /* Snow */
             background: #FFFFFF;
             border-radius: 16px;
             .text{
@@ -66,7 +63,6 @@
                 padding: 16px;
                 gap: 10px;
                 width: 200px;
-                /* Grey Light */
                 background: #F6F5F9;
                 border-radius: 16px;
                 h3{                                             
@@ -74,7 +70,6 @@
                     font-weight: 600;
                     font-size: 20px;
                     line-height: 24px;
-                    font-feature-settings: 'liga' off;
                     color: #333333;
                 }
                 p{                    
@@ -83,9 +78,7 @@
                     font-weight: 400;
                     font-size: 14px;
                     line-height: 20px;
-                    /* or 143% */
                     letter-spacing: 0.3px;
-                    /* Dark */
                     color: #1E1E1E;
                 }
             }
@@ -101,7 +94,6 @@
                     flex-direction: column;
                     padding: 8px;
                     width: 100%;
-                    /* Gray 6 */
                     background: #F2F2F2;
                     border-radius: 12px;
                     .wrapper{
@@ -118,7 +110,6 @@
                                 flex-direction: row;
                                 align-items: center;
                                 padding: 6px 12px;                               
-                                /* Purple */
                                 background: #793EF5;
                                 border-radius: 8px;
                                 span{                                   
@@ -126,9 +117,7 @@
                                     font-weight: 500;
                                     font-size: 14px;
                                     line-height: 20px;
-                                    /* identical to box height, or 143% */
                                     text-align: center;
-                                    /* Snow */
                                     color: #FFFFFF;
                                 }
                             }
@@ -146,9 +135,7 @@
                                     font-weight: 500;
                                     font-size: 14px;
                                     line-height: 20px;
-                                    /* identical to box height, or 143% */
-                                    text-align: center;                                    font-feature-settings: 'liga' off;
-                                    /* Dark */
+                                    text-align: center;                                    
                                     color: #1E1E1E;
                                 }
                             }
@@ -167,10 +154,7 @@
                                 font-weight: 500;
                                 font-size: 14px;
                                 line-height: 20px;
-                                /* identical to box height, or 143% */
                                 text-align: center;
-
-                                /* Dark */
                                 color: #1E1E1E;
                             }
                         }
