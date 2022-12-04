@@ -4,6 +4,7 @@ import New from "./pages/new/New"
 import Guide from "./pages/guide/Guide"
 import Survey from "./pages/surveys/Survey"
 import Settings from "./pages/settings/Settings"
+import NoPage from "./pages/Nopage/NoPage";
 import {
   BrowserRouter,
   Routes,
@@ -31,6 +32,7 @@ function App() {
         <Route path="settings">
           <Route index element={<Settings/>}/>
         </Route>
+        <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>
     </BrowserRouter>

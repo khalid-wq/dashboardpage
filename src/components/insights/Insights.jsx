@@ -8,7 +8,7 @@ const Insights = () => {
     <div className="insights">
             <div className="title">
                     <h1>Internships</h1>
-                    <div className="newIntern">
+                    <div className="newIntern" >
                     <AddBoxOutlinedIcon/>
                     <span>Create New Internship</span>
                     </div>
@@ -28,7 +28,7 @@ const Insights = () => {
                         <div className="chart">
                             <div className="filterBar">
                                       <div className="wrapper">
-                                <div className="weekMonth">
+                                <div className="weekMonth" >
                                     <div className="week">
                                         <span>This week</span>
                                     </div>
