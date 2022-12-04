@@ -4,7 +4,7 @@ import New from "./pages/new/New"
 import Guide from "./pages/guide/Guide"
 import Survey from "./pages/surveys/Survey"
 import Settings from "./pages/settings/Settings"
-import NoPage from "./pages/Nopage/NoPage";
+import NoPage from "./pages/nopage/NoPage";
 import {
   BrowserRouter,
   Routes,
@@ -19,7 +19,7 @@ function App() {
       <Route path="/">
         <Route index element={<Home/>}/>
         <Route path="login" element={<Login/>}/>
-      
+        
        <Route path="new">
           <Route index element={<New/>}/>
         </Route>
